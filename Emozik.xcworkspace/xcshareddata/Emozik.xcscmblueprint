@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "381fb372-a6aa-4d2f-a51f-49c393884968++1493",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "381fb372-a6aa-4d2f-a51f-49c393884968++1493" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "381fb372-a6aa-4d2f-a51f-49c393884968++1493" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1FBD4DC1-FBD2-4946-B923-B21185E935DB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "381fb372-a6aa-4d2f-a51f-49c393884968++1493" : "emozik\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Emozik",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "trunk\/3. Code\/Client\/ios\/Emozique\/Emozik.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.37.140:82\/svn3",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "381fb372-a6aa-4d2f-a51f-49c393884968++1493"
+    }
+  ]
+}

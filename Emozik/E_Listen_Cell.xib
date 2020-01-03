@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="E_Listen_Cell" id="zQz-hH-xcf">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zQz-hH-xcf" id="DrQ-pJ-cCS">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HK0-KQ-Nr6">
+                        <rect key="frame" x="5" y="0.0" width="199" height="43.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhB-2m-8eu">
+                        <rect key="frame" x="205" y="0.0" width="110" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="YPe-eH-Fag"/>
+                            <constraint firstAttribute="width" constant="110" id="wCm-Xq-gUk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jhB-2m-8eu" firstAttribute="top" secondItem="DrQ-pJ-cCS" secondAttribute="top" id="Ays-qS-zuq"/>
+                    <constraint firstAttribute="trailing" secondItem="jhB-2m-8eu" secondAttribute="trailing" constant="5" id="GNJ-sZ-EKu"/>
+                    <constraint firstItem="HK0-KQ-Nr6" firstAttribute="top" secondItem="DrQ-pJ-cCS" secondAttribute="top" id="jqv-GE-3e9"/>
+                    <constraint firstAttribute="bottom" secondItem="HK0-KQ-Nr6" secondAttribute="bottom" id="s1b-Le-E5a"/>
+                    <constraint firstItem="jhB-2m-8eu" firstAttribute="leading" secondItem="HK0-KQ-Nr6" secondAttribute="trailing" constant="1" id="tkH-hJ-oGA"/>
+                    <constraint firstItem="HK0-KQ-Nr6" firstAttribute="leading" secondItem="DrQ-pJ-cCS" secondAttribute="leading" constant="5" id="vpC-EE-N1d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="17" y="77"/>
+        </tableViewCell>
+    </objects>
+</document>

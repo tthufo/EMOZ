@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="E_Music_Type_Cell" id="gTV-IL-0wX">
+            <rect key="frame" x="0.0" y="0.0" width="134" height="141"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="134" height="141"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" tag="11" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5P0-fv-9ym">
+                        <rect key="frame" x="0.0" y="0.0" width="134" height="109"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" tag="20" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rpY-en-CLb">
+                        <rect key="frame" x="96" y="70" width="34" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="5h7-zI-erC"/>
+                            <constraint firstAttribute="width" constant="34" id="Sc3-M9-efr"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhạc Vàng" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jre-7g-Re8">
+                        <rect key="frame" x="0.0" y="112" width="134" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="Plk-iJ-2Iu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" tag="10" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart_ac" translatesAutoresizingMaskIntoConstraints="NO" id="oV1-EW-Drm">
+                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="5P0-fv-9ym" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="31c-aD-Bcm"/>
+                <constraint firstItem="5P0-fv-9ym" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5V5-eR-Oz2"/>
+                <constraint firstItem="jre-7g-Re8" firstAttribute="top" secondItem="5P0-fv-9ym" secondAttribute="bottom" constant="3" id="CG2-Hc-BPq"/>
+                <constraint firstItem="jre-7g-Re8" firstAttribute="top" secondItem="rpY-en-CLb" secondAttribute="bottom" constant="8" id="XMu-sf-uY1"/>
+                <constraint firstAttribute="trailing" secondItem="jre-7g-Re8" secondAttribute="trailing" id="bBc-yT-2Ri"/>
+                <constraint firstAttribute="trailing" secondItem="5P0-fv-9ym" secondAttribute="trailing" id="k1c-RB-MkB"/>
+                <constraint firstAttribute="bottom" secondItem="jre-7g-Re8" secondAttribute="bottom" id="mBm-bz-SRv"/>
+                <constraint firstAttribute="trailing" secondItem="rpY-en-CLb" secondAttribute="trailing" constant="4" id="pmJ-4i-Ur5"/>
+                <constraint firstItem="jre-7g-Re8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="shV-jx-wPG"/>
+            </constraints>
+            <size key="customSize" width="134" height="139"/>
+            <point key="canvasLocation" x="278" y="318.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="heart_ac" width="158" height="149"/>
+    </resources>
+</document>

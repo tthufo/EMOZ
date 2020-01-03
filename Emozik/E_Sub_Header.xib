@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="E_Sub_Header" id="6mK-YW-kga">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFr-Ih-vSq">
+                    <rect key="frame" x="13" y="8" width="299" height="34"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                    <color key="textColor" red="1" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="lFr-Ih-vSq" secondAttribute="bottom" constant="8" id="ORR-Ap-YDN"/>
+                <constraint firstItem="lFr-Ih-vSq" firstAttribute="leading" secondItem="6mK-YW-kga" secondAttribute="leading" constant="13" id="RHH-KQ-3UK"/>
+                <constraint firstAttribute="trailing" secondItem="lFr-Ih-vSq" secondAttribute="trailing" constant="8" id="SHr-5F-zX0"/>
+                <constraint firstItem="lFr-Ih-vSq" firstAttribute="top" secondItem="6mK-YW-kga" secondAttribute="top" constant="8" id="keC-94-94c"/>
+            </constraints>
+            <point key="canvasLocation" x="506" y="295"/>
+        </collectionReusableView>
+    </objects>
+</document>

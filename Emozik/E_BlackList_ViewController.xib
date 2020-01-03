@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="E_BlackList_ViewController">
+            <connections>
+                <outlet property="tableView" destination="aL3-ZU-J6p" id="kFM-L1-LGG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GBW-al-pFW">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yp5-XX-4er">
+                            <rect key="frame" x="0.0" y="63" width="320" height="1"/>
+                            <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="E7g-hl-VNY"/>
+                            </constraints>
+                        </view>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mAA-Yl-rD3">
+                            <rect key="frame" x="44" y="21" width="229" height="33"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Danh sách chặn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEM-kM-ULc" customClass="MarqueeLabel">
+                                    <rect key="frame" x="0.0" y="6" width="229" height="21"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                    <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="marqueeType">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="scrollDuration">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="trailingBuffer">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="rate">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="leadingBuffer">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="fadeLength">
+                                            <real key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="animationDelay">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="OEM-kM-ULc" secondAttribute="bottom" constant="6" id="0aJ-6e-sgK"/>
+                                <constraint firstAttribute="trailing" secondItem="OEM-kM-ULc" secondAttribute="trailing" id="RbH-Ff-j33"/>
+                                <constraint firstItem="OEM-kM-ULc" firstAttribute="leading" secondItem="mAA-Yl-rD3" secondAttribute="leading" id="W46-Pu-YJA"/>
+                                <constraint firstAttribute="height" constant="33" id="caq-yk-VWW"/>
+                                <constraint firstItem="OEM-kM-ULc" firstAttribute="top" secondItem="mAA-Yl-rD3" secondAttribute="top" constant="6" id="ozl-mk-r2Z"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTx-53-ddq">
+                            <rect key="frame" x="0.0" y="18" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="s8i-ky-Jk5"/>
+                                <constraint firstAttribute="height" constant="40" id="vrO-sn-8Yy"/>
+                            </constraints>
+                            <state key="normal" image="back"/>
+                            <connections>
+                                <action selector="didPressBack:" destination="-1" eventType="touchUpInside" id="Lgl-oC-ifV"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrJ-Q5-xay" customClass="DropButton">
+                            <rect key="frame" x="282" y="21" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="BSg-tL-QvV"/>
+                                <constraint firstAttribute="width" constant="35" id="LMa-oe-nvQ"/>
+                            </constraints>
+                            <state key="normal" image="menu_g"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="pListName" value="options"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="nrJ-Q5-xay" secondAttribute="trailing" constant="3" id="0Y3-b7-9zA"/>
+                        <constraint firstItem="nrJ-Q5-xay" firstAttribute="top" secondItem="GBW-al-pFW" secondAttribute="top" constant="21" id="45t-XR-m5b"/>
+                        <constraint firstAttribute="trailing" secondItem="yp5-XX-4er" secondAttribute="trailing" id="920-W1-i1J"/>
+                        <constraint firstItem="nrJ-Q5-xay" firstAttribute="leading" secondItem="mAA-Yl-rD3" secondAttribute="trailing" constant="9" id="EC2-mY-6r2"/>
+                        <constraint firstItem="hTx-53-ddq" firstAttribute="leading" secondItem="GBW-al-pFW" secondAttribute="leading" id="IwU-nA-csR"/>
+                        <constraint firstItem="hTx-53-ddq" firstAttribute="top" secondItem="GBW-al-pFW" secondAttribute="top" constant="18" id="JtL-t5-x9G"/>
+                        <constraint firstAttribute="bottom" secondItem="yp5-XX-4er" secondAttribute="bottom" id="Lme-zT-A2z"/>
+                        <constraint firstItem="mAA-Yl-rD3" firstAttribute="leading" secondItem="hTx-53-ddq" secondAttribute="trailing" constant="4" id="tnz-LO-fbO"/>
+                        <constraint firstItem="yp5-XX-4er" firstAttribute="leading" secondItem="GBW-al-pFW" secondAttribute="leading" id="v4N-ga-oI6"/>
+                        <constraint firstAttribute="height" constant="64" id="vWw-Wc-DwZ"/>
+                        <constraint firstItem="mAA-Yl-rD3" firstAttribute="top" secondItem="GBW-al-pFW" secondAttribute="top" constant="21" id="w0x-jH-gtz"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aL3-ZU-J6p">
+                    <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="8EG-Ci-1tx"/>
+                        <outlet property="delegate" destination="-1" id="0nx-WF-v5H"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="GBW-al-pFW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6HP-0D-6EP"/>
+                <constraint firstItem="aL3-ZU-J6p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GVD-im-4Jf"/>
+                <constraint firstItem="GBW-al-pFW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="K87-uw-m7F"/>
+                <constraint firstAttribute="bottom" secondItem="aL3-ZU-J6p" secondAttribute="bottom" id="KPX-DB-DAi"/>
+                <constraint firstAttribute="trailing" secondItem="GBW-al-pFW" secondAttribute="trailing" id="SIh-ro-Xw3"/>
+                <constraint firstAttribute="trailing" secondItem="aL3-ZU-J6p" secondAttribute="trailing" id="YqR-71-l32"/>
+                <constraint firstItem="aL3-ZU-J6p" firstAttribute="top" secondItem="GBW-al-pFW" secondAttribute="bottom" id="ndC-73-FUJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="50" height="50"/>
+        <image name="menu_g" width="50" height="50"/>
+    </resources>
+</document>

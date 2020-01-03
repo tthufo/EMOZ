@@ -1,0 +1,196 @@
+//
+//  PrefixHeader.pch
+//  SoundC
+//
+//  Created by thanhhaitran on 9/5/16.
+//  Copyright © 2016 thanhhaitran. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifndef APPDELEGATE
+#define APPDELEGATE ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+#endif
+
+#define screenHeight1 [UIScreen mainScreen].bounds.size.height
+#define screenWidth1 [UIScreen mainScreen].bounds.size.width
+
+#define DegreesToRadians(x) ((x) * M_PI / 180.0)
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+#define RAND_FROM_TO(min, max) (min + arc4random_uniform(max - min + 1))
+
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define IS_IPHONE_4_OR_LESS (SCREEN_MAX_LENGTH < 568.0)
+
+#define IS_IPHONE_5 (SCREEN_MAX_LENGTH == 568.0)
+#define IS_IPHONE_6 (SCREEN_MAX_LENGTH == 667.0)
+#define IS_IPHONE_6P (SCREEN_MAX_LENGTH == 736.0)
+
+#define dDeviceOrientation [[UIDevice currentDevice] orientation]
+#define isPortrait  UIDeviceOrientationIsPortrait(dDeviceOrientation)
+#define isLandScape UIDeviceOrientationIsLandscape(dDeviceOrientation)
+#define isFaceUp    dDeviceOrientation == UIDeviceOrientationFaceUp   ? YES : NO
+#define isFaceDown  dDeviceOrientation == UIDeviceOrientationFaceDown ? YES : NO
+
+#define ShowNetworkActivityIndicator() [UIApplication sharedApplication].networkActivityIndicatorVisible = YES
+#define HideNetworkActivityIndicator() [UIApplication sharedApplication].networkActivityIndicatorVisible = NO
+
+#define alphabet @[@"HOT", @"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I", @"J", @"K", @"L", @"M", @"N", @"O", @"P", @"Q", @"R", @"S", @"T", @"U", @"V", @"W", @"X", @"Y", @"Z"]
+
+//#define kHost @"http://192.168.36.25:9095/api_client.php/"
+
+#define kHost @"http://emozikapi.xzone.vn/api_client.php/"
+
+//emozikapi.xzone.vn/api_client.php
+
+//#define kHost @"http://203.113.159.60:9095/api_client.php/"
+
+#define kAvatar [UIImage imageNamed:@"bg_default_album_art"]
+
+#define purchaseKey @"removeAds"
+
+#define productId @"remove_now_ads"
+
+#define kColor @"#F0F1F2"
+
+#define kHeight (screenWidth1 * 9.0f / 16.0f) - 50
+
+#define temp @"http://www.jqueryscript.net/images/Simplest-Responsive-jQuery-Image-Lightbox-Plugin-simple-lightbox.jpg"
+
+#define maxR @"20"
+
+
+#define kOtp [System getValue:@"otp"]
+
+//#define kInfo [System getValue:@"user"]
+
+#define kReview [System getValue:@"R"]
+
+#define kInfo [APPDELEGATE getObject:@"user"]
+
+#define kMusic [System getValue:@"musicCat"]
+
+#define kSetting [System getValue:@"setting"]
+
+#define kEmotion [System getValue:@"emoCache"]
+
+#define kAlarm [System getValue:@"alarm"]
+
+#define kEQ [System getValue:@"equal"]
+
+#define kDefault [System getValue:@"default"]
+
+#define kURL @[@"URL", @"URL_320", @"LOSSLESS_URL"]
+
+#define kUid ([kInfo isKindOfClass:[NSArray class]] || !kInfo) ? @"0" : kInfo[@"USER_ID"] ? kInfo[@"USER_ID"] : @"0"
+
+
+//Hyphenate
+
+
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+#define WEAK_SELF typeof(self) __weak weakSelf = self;
+
+#define KScreenHeight [[UIScreen mainScreen] bounds].size.height
+#define KScreenWidth  [[UIScreen mainScreen] bounds].size.width
+
+#define KNOTIFICATION_LOGINCHANGE @"loginStateChange"
+#define KNOTIFICATION_UPDATEUNREADCOUNT @"setupUnreadMessageCount"
+#define KNOTIFICATIONNAME_DELETEALLMESSAGE @"RemoveAllMessages"
+#define KNOTIFICATION_CALL @"callOutWithChatter"
+#define KNOTIFICATION_CALL_VIDEO @"callInWithChatter"
+
+
+
+#import "EaseCallManager.h"
+#import "EMColorUtils.h"
+#import "UIView+HyphenateView.h"
+#import "UIImageView+WebCache.h"
+#import "MBProgressHUD.h"
+#import "NSObject+EMAlertView.h"
+
+
+
+///Header
+
+#import <AVFoundation/AVFoundation.h>
+
+#import <JSONKit.h>
+
+#import <UIImageView+WebCache.h>
+
+#import <AVHexColor.h>
+
+#import "Upload.h"
+
+#import "VTXLyricPlayerView.h"
+
+#import "VTXKaraokeLyricView.h"
+
+#import "VTXLyricParser.h"
+
+#import "VTXLyric.h"
+
+#import <Hyphenate/Hyphenate.h>
+
+///Category
+
+#import "AppDelegate.h"
+
+#import "FBPlugInHeader.h"
+
+#import "NSDate+TimeAgo.h"
+
+#import "UIViewController+Additional.h"
+
+#import "FMMosaicLayout.h"
+
+#import "E_Overlay_Menu.h"
+
+#import "E_Navigation_Controller.h"
+
+#import "JASidePanelController.h"
+
+#import "E_Search_ViewController.h"
+
+#import "SWTableViewCell.h"
+
+
+
+#import "List.h"
+
+#import "Item.h"
+
+#import "Records.h"
+
+#import "AudioRecord.h"
+
+#import "VideoRecord.h"
+
+#import "Timer.h"
+
+#import "DownloadManager.h"
+
+#import "DownLoadAudio.h"
+
+#import "DownLoadVideo.h"
+
+#import "EM_MenuView.h"
+
+#import "CircularSliderView.h"
+
+#import "VerticalSlider.h"
+
+
+
+#endif /* PrefixHeader_pch */

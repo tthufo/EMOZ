@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController__">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jvg-J9-1ko">
+                    <rect key="frame" x="137" y="225" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="didStopPress:" destination="-1" eventType="touchUpInside" id="g8p-nX-Wmb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqb-p7-BEP">
+                    <rect key="frame" x="140" y="328" width="46" height="30"/>
+                    <state key="normal" title="pause"/>
+                    <connections>
+                        <action selector="didPausePress:" destination="-1" eventType="touchUpInside" id="yD0-es-8vH"/>
+                    </connections>
+                </button>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hyy-FP-5yU">
+                    <rect key="frame" x="136" y="409" width="51" height="31"/>
+                    <connections>
+                        <action selector="audioSwitch:" destination="-1" eventType="valueChanged" id="RqP-iJ-mtQ"/>
+                    </connections>
+                </switch>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFu-FJ-8ih">
+                    <rect key="frame" x="44" y="409" width="46" height="30"/>
+                    <state key="normal" title="start"/>
+                    <connections>
+                        <action selector="audioStart:" destination="-1" eventType="touchUpInside" id="jx6-rb-0uK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pf-a2-47T">
+                    <rect key="frame" x="240" y="409" width="46" height="30"/>
+                    <state key="normal" title="pause"/>
+                    <connections>
+                        <action selector="audioPause:" destination="-1" eventType="touchUpInside" id="tln-jY-cSB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pti-tG-J1R">
+                    <rect key="frame" x="128" y="112" width="64" height="30"/>
+                    <state key="normal" title="Combine"/>
+                    <connections>
+                        <action selector="didCombine:" destination="-1" eventType="touchUpInside" id="yIe-zp-6uU"/>
+                    </connections>
+                </button>
+                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="YPg-cn-RyL">
+                    <rect key="frame" x="22" y="42" width="275" height="31"/>
+                    <connections>
+                        <action selector="sliderChange:" destination="-1" eventType="valueChanged" id="Yre-cs-5T0"/>
+                    </connections>
+                </slider>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpd-LS-Ihk">
+                    <rect key="frame" x="24" y="167" width="46" height="30"/>
+                    <state key="normal" title="Gain"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="10" y="155"/>
+        </view>
+    </objects>
+</document>

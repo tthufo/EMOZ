@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="E_User_Setting_Cell" rowHeight="60" id="6NJ-ha-Mod">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6NJ-ha-Mod" id="aiy-fQ-gKC">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RF-MZ-bcx">
+                        <rect key="frame" x="14" y="34" width="230" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="CW8-87-jy8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wN1-gK-XWa">
+                        <rect key="frame" x="249" y="8" width="61" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="5Z0-IO-HA5"/>
+                            <constraint firstAttribute="width" constant="61" id="sUl-bt-Ddu"/>
+                        </constraints>
+                        <state key="normal" image="em_tog_off"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4en-x7-h1f">
+                        <rect key="frame" x="14" y="7" width="230" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="IWD-E4-xb2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t95-gq-9GW" customClass="DropButton">
+                        <rect key="frame" x="8" y="5" width="304" height="54"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="pListName" value="reverb"/>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4en-x7-h1f" firstAttribute="top" secondItem="aiy-fQ-gKC" secondAttribute="top" constant="7" id="Dkg-mi-qLL"/>
+                    <constraint firstAttribute="trailing" secondItem="wN1-gK-XWa" secondAttribute="trailing" constant="10" id="EfG-cG-LQm"/>
+                    <constraint firstItem="t95-gq-9GW" firstAttribute="leading" secondItem="aiy-fQ-gKC" secondAttribute="leading" constant="8" id="J5V-kc-ohi"/>
+                    <constraint firstItem="wN1-gK-XWa" firstAttribute="top" secondItem="aiy-fQ-gKC" secondAttribute="top" constant="8" id="Mpf-Cx-Iu9"/>
+                    <constraint firstAttribute="bottom" secondItem="t95-gq-9GW" secondAttribute="bottom" id="ZHc-ad-anm"/>
+                    <constraint firstAttribute="trailing" secondItem="t95-gq-9GW" secondAttribute="trailing" constant="8" id="cvP-J5-jom"/>
+                    <constraint firstItem="4RF-MZ-bcx" firstAttribute="leading" secondItem="aiy-fQ-gKC" secondAttribute="leading" constant="14" id="epP-Cx-18r"/>
+                    <constraint firstItem="4en-x7-h1f" firstAttribute="leading" secondItem="aiy-fQ-gKC" secondAttribute="leading" constant="14" id="eyZ-Cq-Sia"/>
+                    <constraint firstItem="4RF-MZ-bcx" firstAttribute="top" secondItem="4en-x7-h1f" secondAttribute="bottom" constant="1" id="hZK-33-ZYZ"/>
+                    <constraint firstAttribute="trailing" secondItem="4RF-MZ-bcx" secondAttribute="trailing" constant="76" id="idS-dJ-qlu"/>
+                    <constraint firstItem="wN1-gK-XWa" firstAttribute="leading" secondItem="4en-x7-h1f" secondAttribute="trailing" constant="5" id="nCw-g0-lNo"/>
+                    <constraint firstItem="t95-gq-9GW" firstAttribute="top" secondItem="aiy-fQ-gKC" secondAttribute="top" constant="5" id="tc0-v7-z5S"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="435" y="298"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="em_tog_off" width="100" height="39"/>
+    </resources>
+</document>

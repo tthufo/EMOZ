@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="E_User_Main_Cell" id="eh2-ZZ-Qx1">
+            <rect key="frame" x="0.0" y="0.0" width="202" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="202" height="57"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button hidden="YES" opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayZ-kS-Tmw">
+                        <rect key="frame" x="0.0" y="0.0" width="202" height="57"/>
+                        <color key="backgroundColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down" translatesAutoresizingMaskIntoConstraints="NO" id="Fay-Kv-T2Z">
+                        <rect key="frame" x="8" y="6" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="cS2-jQ-GW5"/>
+                            <constraint firstAttribute="width" constant="45" id="dJT-Yl-MDN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="----" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqP-1R-IbL">
+                        <rect key="frame" x="59" y="4" width="135" height="50"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="qqP-1R-IbL" secondAttribute="bottom" constant="3" id="6DJ-xe-jWK"/>
+                <constraint firstAttribute="bottom" secondItem="ayZ-kS-Tmw" secondAttribute="bottom" id="HCS-zB-4Vs"/>
+                <constraint firstItem="Fay-Kv-T2Z" firstAttribute="leading" secondItem="eh2-ZZ-Qx1" secondAttribute="leading" constant="8" id="V6W-QV-MXi"/>
+                <constraint firstItem="qqP-1R-IbL" firstAttribute="top" secondItem="eh2-ZZ-Qx1" secondAttribute="top" constant="4" id="cg4-GR-RSn"/>
+                <constraint firstItem="qqP-1R-IbL" firstAttribute="leading" secondItem="Fay-Kv-T2Z" secondAttribute="trailing" constant="6" id="dWe-YU-h6C"/>
+                <constraint firstAttribute="trailing" secondItem="ayZ-kS-Tmw" secondAttribute="trailing" id="fXO-ih-SOB"/>
+                <constraint firstItem="Fay-Kv-T2Z" firstAttribute="top" secondItem="eh2-ZZ-Qx1" secondAttribute="top" constant="6" id="gtr-dA-BG9"/>
+                <constraint firstItem="ayZ-kS-Tmw" firstAttribute="leading" secondItem="eh2-ZZ-Qx1" secondAttribute="leading" id="kT7-Jl-wn6"/>
+                <constraint firstAttribute="trailing" secondItem="qqP-1R-IbL" secondAttribute="trailing" constant="8" id="nvS-4q-UYx"/>
+                <constraint firstItem="ayZ-kS-Tmw" firstAttribute="top" secondItem="eh2-ZZ-Qx1" secondAttribute="top" id="z2X-8T-apa"/>
+            </constraints>
+            <size key="customSize" width="202" height="57"/>
+            <point key="canvasLocation" x="443" y="316.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="down" width="42" height="42"/>
+    </resources>
+</document>

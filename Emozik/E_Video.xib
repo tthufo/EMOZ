@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view alpha="0.0" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="187"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TjZ-Rf-ime">
+                    <rect key="frame" x="127" y="61" width="66" height="66"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="66" id="ZNT-e4-gdW"/>
+                        <constraint firstAttribute="height" constant="66" id="sdW-7r-IW0"/>
+                    </constraints>
+                    <state key="normal" image="play_w"/>
+                </button>
+                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWy-fp-8xg">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                    <subviews>
+                        <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Sq-Lh-tml">
+                            <rect key="frame" x="280" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="7Pn-gn-Prp"/>
+                                <constraint firstAttribute="width" constant="40" id="8Mv-2q-tSy"/>
+                            </constraints>
+                            <state key="normal" image="share_w"/>
+                        </button>
+                        <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sS2-ca-J1r">
+                            <rect key="frame" x="236" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="kCt-Sk-Nbr"/>
+                                <constraint firstAttribute="height" constant="40" id="zv1-Ap-1G4"/>
+                            </constraints>
+                            <state key="normal" image="heart_ac"/>
+                        </button>
+                        <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLk-oJ-GuJ">
+                            <rect key="frame" x="195" y="0.0" width="0.0" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="KgO-Ud-LsP"/>
+                                <constraint firstAttribute="width" id="VMM-dy-WqW"/>
+                            </constraints>
+                        </button>
+                        <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpC-4M-1Yz">
+                            <rect key="frame" x="195" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="gKN-mb-EZL"/>
+                                <constraint firstAttribute="width" constant="40" id="kiF-Fq-uNy"/>
+                            </constraints>
+                            <state key="normal" image="kara_w"/>
+                        </button>
+                        <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eC-Rp-dbi" customClass="DropButton">
+                            <rect key="frame" x="160" y="2" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="BVR-yk-uPf"/>
+                                <constraint firstAttribute="height" constant="35" id="mAa-fu-PMY"/>
+                            </constraints>
+                            <state key="normal" image="down_w"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="pListName" value="options"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5m-7Z-IWq">
+                            <rect key="frame" x="2" y="2" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="01M-wd-LZR"/>
+                                <constraint firstAttribute="width" constant="35" id="1Ck-hT-B1D"/>
+                            </constraints>
+                            <state key="normal" image="back_r"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="h5m-7Z-IWq" firstAttribute="leading" secondItem="wWy-fp-8xg" secondAttribute="leading" constant="2" id="4Ad-X8-2YZ"/>
+                        <constraint firstItem="wpC-4M-1Yz" firstAttribute="top" secondItem="wWy-fp-8xg" secondAttribute="top" id="KWE-eK-oAE"/>
+                        <constraint firstAttribute="trailing" secondItem="5Sq-Lh-tml" secondAttribute="trailing" id="RIn-FN-Oo5"/>
+                        <constraint firstItem="wpC-4M-1Yz" firstAttribute="leading" secondItem="9eC-Rp-dbi" secondAttribute="trailing" id="XEL-68-EPT"/>
+                        <constraint firstItem="sS2-ca-J1r" firstAttribute="top" secondItem="wWy-fp-8xg" secondAttribute="top" id="cih-GF-qZ8"/>
+                        <constraint firstItem="5Sq-Lh-tml" firstAttribute="top" secondItem="wWy-fp-8xg" secondAttribute="top" id="csl-Pv-JDy"/>
+                        <constraint firstAttribute="height" constant="40" id="d3I-D3-NA6"/>
+                        <constraint firstItem="5Sq-Lh-tml" firstAttribute="leading" secondItem="sS2-ca-J1r" secondAttribute="trailing" constant="4" id="ejC-WV-cjz"/>
+                        <constraint firstItem="xLk-oJ-GuJ" firstAttribute="top" secondItem="wWy-fp-8xg" secondAttribute="top" id="lcK-xB-JyM"/>
+                        <constraint firstItem="sS2-ca-J1r" firstAttribute="leading" secondItem="wpC-4M-1Yz" secondAttribute="trailing" constant="1" id="mFw-hU-xV7"/>
+                        <constraint firstItem="h5m-7Z-IWq" firstAttribute="top" secondItem="wWy-fp-8xg" secondAttribute="top" constant="2" id="nPm-rd-yL1"/>
+                        <constraint firstItem="wpC-4M-1Yz" firstAttribute="leading" secondItem="xLk-oJ-GuJ" secondAttribute="trailing" id="qRE-9u-MHC"/>
+                        <constraint firstItem="9eC-Rp-dbi" firstAttribute="top" secondItem="wWy-fp-8xg" secondAttribute="top" constant="2" id="wEY-TI-734"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wWy-fp-8xg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="56K-9U-Hzw"/>
+                <constraint firstItem="wWy-fp-8xg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5sM-MY-Mau"/>
+                <constraint firstItem="TjZ-Rf-ime" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ATI-hG-u0X"/>
+                <constraint firstItem="TjZ-Rf-ime" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Bj5-wg-niv"/>
+                <constraint firstAttribute="trailing" secondItem="wWy-fp-8xg" secondAttribute="trailing" id="cGl-Xq-DUZ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-67" y="161.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back_r" width="50" height="50"/>
+        <image name="down_w" width="50" height="50"/>
+        <image name="heart_ac" width="158" height="149"/>
+        <image name="kara_w" width="50" height="50"/>
+        <image name="play_w" width="50" height="50"/>
+        <image name="share_w" width="50" height="50"/>
+    </resources>
+</document>

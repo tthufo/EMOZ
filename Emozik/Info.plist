@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Emozik</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb347938842255681</string>
+				<string>com.googleusercontent.apps.518444368518-bsepn5sfcc91nqlhj5l9sr46k985hvbd</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>20</string>
+	<key>FacebookAppID</key>
+	<string>347938842255681</string>
+	<key>FacebookDisplayName</key>
+	<string>Emozik</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbauth2</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Emozik cần sử dụng Camera</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Emozik cần sử dụng vị trí hiện tại của bạn cho việc cập nhật thông tin</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Emozik cần sử dụng vị trí hiện tại của bạn cho việc cập nhật thông tin</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Emozik cần sử dụng Microphone cho việc thu âm</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Emozik cần sử dụng ảnh trong Bộ sưu tập</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+	<key>host</key>
+	<string>http://emozikapi.xzone.vn/api_client.php</string>
+	<key>showAds</key>
+	<false/>
+</dict>
+</plist>

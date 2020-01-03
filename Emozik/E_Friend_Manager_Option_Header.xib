@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="E_Friend_Manager_Option_Header" rowHeight="65" id="ip7-dG-vTQ" customClass="UITableViewHeaderFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ip7-dG-vTQ" id="eda-Q8-Qbf">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bh-fz-1lH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMc-Jk-vjE">
+                                <rect key="frame" x="8" y="13" width="208" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkw-28-JPa">
+                                <rect key="frame" x="262" y="4" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bkJ-uh-FZu"/>
+                                    <constraint firstAttribute="width" constant="40" id="u5m-4h-gxc"/>
+                                </constraints>
+                                <state key="normal" image="delete_g"/>
+                            </button>
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zft-35-YTY">
+                                <rect key="frame" x="219" y="4" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="ZBA-Tl-A7E"/>
+                                    <constraint firstAttribute="height" constant="40" id="cBD-6f-O60"/>
+                                </constraints>
+                                <state key="normal" image="edit_g"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50980392156862742" green="0.51372549019607838" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="AMc-Jk-vjE" secondAttribute="bottom" constant="13" id="4Ou-uB-XP1"/>
+                            <constraint firstItem="AMc-Jk-vjE" firstAttribute="top" secondItem="4bh-fz-1lH" secondAttribute="top" constant="13" id="EWX-mb-VtI"/>
+                            <constraint firstItem="hkw-28-JPa" firstAttribute="top" secondItem="4bh-fz-1lH" secondAttribute="top" constant="4" id="J8v-XU-fb3"/>
+                            <constraint firstItem="Zft-35-YTY" firstAttribute="leading" secondItem="AMc-Jk-vjE" secondAttribute="trailing" constant="3" id="UqC-W2-a1k"/>
+                            <constraint firstItem="Zft-35-YTY" firstAttribute="top" secondItem="4bh-fz-1lH" secondAttribute="top" constant="4" id="aNc-Gy-5oT"/>
+                            <constraint firstItem="hkw-28-JPa" firstAttribute="leading" secondItem="Zft-35-YTY" secondAttribute="trailing" constant="3" id="ivq-bw-Jhy"/>
+                            <constraint firstAttribute="trailing" secondItem="hkw-28-JPa" secondAttribute="trailing" constant="18" id="lRp-Gp-OEe"/>
+                            <constraint firstItem="AMc-Jk-vjE" firstAttribute="leading" secondItem="4bh-fz-1lH" secondAttribute="leading" constant="8" id="nFH-x9-jv4"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" tag="15" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down_fg" translatesAutoresizingMaskIntoConstraints="NO" id="PoU-6N-Vbs">
+                        <rect key="frame" x="282" y="46" width="23" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="4Xa-D6-v94"/>
+                            <constraint firstAttribute="width" constant="23" id="who-jh-7Ac"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PoU-6N-Vbs" firstAttribute="top" secondItem="4bh-fz-1lH" secondAttribute="bottom" constant="-1" id="6EY-aV-27C"/>
+                    <constraint firstItem="4bh-fz-1lH" firstAttribute="top" secondItem="eda-Q8-Qbf" secondAttribute="top" id="JPe-g7-Mo2"/>
+                    <constraint firstAttribute="trailing" secondItem="4bh-fz-1lH" secondAttribute="trailing" id="JQQ-PX-pMw"/>
+                    <constraint firstAttribute="bottom" secondItem="4bh-fz-1lH" secondAttribute="bottom" constant="12" id="TYd-Gp-2j4"/>
+                    <constraint firstAttribute="trailing" secondItem="PoU-6N-Vbs" secondAttribute="trailing" constant="15" id="iw0-sY-3Ci"/>
+                    <constraint firstItem="4bh-fz-1lH" firstAttribute="leading" secondItem="eda-Q8-Qbf" secondAttribute="leading" id="nxa-iS-ztW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="521" y="283"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="delete_g" width="29" height="29"/>
+        <image name="down_fg" width="18" height="9"/>
+        <image name="edit_g" width="29" height="29"/>
+    </resources>
+</document>

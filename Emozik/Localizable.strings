@@ -1,0 +1,322 @@
+/************************************************************
+ *  * Hyphenate
+ * __________________
+ * Copyright (C) 2016 Hyphenate Inc. All rights reserved.
+ *
+ * NOTICE: All information contained herein is, and remains
+ * the property of Hyphenate Inc.
+ */
+
+//button
+"button.save" = "Lưu";
+"button.remove" = "Xóa bỏ";
+"button.black" = "Chặn";
+"button.mute" = "Tắt tiếng";
+"button.demote" = "Giáng cấp";
+"button.upgrade" = "Nâng cấp";
+"button.more" = "Tải thêm";
+"button.prompt" = "Gợi ý";
+"button.ok" = "Đồng ý";
+"button.cancel" = "Thoát";
+
+//hud
+"hud.wait" = "Đang chờ...";
+"hud.load" = "Đang tải ...";
+"hud.fail" = "Xảy ra lỗi";
+"hud.success" = "Thành công";
+
+//title
+"title.contacts" = "Liên hệ";
+"title.chats" = "Cuộc hội thoại";
+"title.settings" = "Tinh chỉnh";
+"title.addContact" = "Thêm liên hệ";
+"title.newGroup" = "Nhóm mới";
+"title.addParticipants" = "Thêm thành viên";
+"title.groupInfo" = "Thông tin nhóm";
+"title.chatroomInfo" = "Thông cin cuộc hội thoại";
+"title.memberList" = "Danh sách thành viên";
+"title.create" = "Tạo mới";
+"title.announcement" = "Cập nhật thông báo";
+"title.transferOwner" = "Chuyển đổi chủ";
+"title.updateGroupName" = "Cập nhật tên nhóm";
+"title.occupantList" = "Danh sách thành viên";
+"title.adminList" = "Danh sách Admin";
+"title.blacklist" = "Danh sách bị chặn";
+"title.muteList" = "Danh sách bị tắt tiếng";
+"title.inviteContacts" = "Yêu cầu kết bạn";
+"title.addAdmin" = "Thêm Admin";
+
+//setting title
+"title.setting.about" = "Chi tiết";
+"title.setting.push" = "Thông báo";
+"title.setting.pushdisplayname" = "Hiển thị thông báo";
+"title.setting.account" = "Tài khoản";
+"title.setting.chats" = "Cuộc hội thoại";
+
+//login
+"login.signup.tips" = "Have an account?";
+"login.tips" = "Yay! New to Hyphenate?";
+"login.changebutton.signup" = "Sign up";
+"login.changebutton.login" = "Log in";
+"login.taken" = "Username taken";
+"login.signup.failure" = "Sign up failure";
+"login.signup.succeed" = "Sign up succeed";
+"login.failure" = "Login failure";
+"login.failure.password.notmatch" = "Password does not match username";
+"login.ok" = "Ok";
+"login.inputNameAndPswd" = "Please enter username and password";
+"login.endAutoLogin.failure" = "Automatic login failed";
+"login.endAutoLogin.succeed" = "Automatic login succeed";
+
+//chat
+"chat.not.delivered" = "Gửi thất bại";
+"chat.read" = "Đã xem";
+"chat.sent" = "Đã gửi";
+"chat.hold.record" = "Giữ để ghi âm";
+"chat.release.send" = "Thả để gửi";
+"chat.release.cancel" = "Thả để hủy";
+"chat.image1" = "[Tin nhắn hình]";
+"chat.voice1" = "[Tin nhắn thoại]";
+"chat.location1" = "[Tin nhắn vị trí]";
+"chat.video1" = "[Tin nhắn video]";
+"chat.file1" = "[Tập tin]";
+"chat.delete" = "Xóa";
+"chat.copy" = "Sao chép";
+"chat.cancel" = "Hủy";
+"chat.placeHolder" = "Gửi tin nhắn";
+"chat.send" = "Gửi";
+"chat.clearMsg" = "Bạn có muốn xóa toàn bộ tin nhắn?";
+
+//call
+"call.calling" = "Đang gọi";
+"call.initFailed" = "Không thể thực hiện cuộc gọi";
+"call.ok" = "OK";
+"call.network.disconnection" = "Mạng không khả dụng";
+"call.userNotAnswer" = "Không trả lời";
+"call.declined" = "Cuộc gọi bị từ chối";
+"call.userBusy" = "Đang bận";
+"call.failed" = "Cuộc gọi thất bại";
+"call.userOffline" = "Đang ngoại tuyến";
+"call.incomingCall" = "Cuộc gọi hội thoại";
+"call.incomingVideoCall" = "Cuộc gọi video";
+
+//error
+"error.connectNetworkFail" = "Kết nối không khả dụng!";
+"error.connectServerFail" = "Kết nối tới máy chủ không khả dụng!";
+"error.connectServerTimeout" = "Kết nối tới máy chủ lỗi!";
+
+//setting
+"setting.about" = "Chi tiết";
+"setting.push" = "Thông báo";
+"setting.account" = "Tài khoản";
+"setting.chats" = "Cuộc hội thoại";
+"setting.callPush" = "Thông báo gọi ngoại tuyến";
+
+//setting.about
+"setting.about.appversion" = "App Version";
+"setting.about.sdkversion" = "SDK Version";
+"setting.about.uiversion" = "EaseUI Library Version";
+
+//setting.push
+"setting.push.getFailed" = "Get push status failed";
+"setting.push.display" = "Hiển thị nội dung xem trước";//"Display preview details";
+"setting.push.nodisturb" = "Không làm phiền";//"Do not disturb";
+"setting.push.enable" = "Bật";//"Enabled";
+"setting.push.disable" = "Tắt";//"Disabled";
+"setting.push.displayname" = "Tên hiển thị trên thông báo";
+"setting.push.tip" = "The display name will appear in notification center.";
+"setting.push.systemPush" = "Thông báo";
+"setting.push.anotherTip" = "Mở/Đóng thông báo trong phần “Cài Đặt”->”Thông Báo” trên thiết bị.";
+"setting.push.changeStyleFailed" = "Modify push displayStyle failed";
+"setting.push.changeDisturbFailed" = "Modify noDisturb status failed";
+
+//setting.account
+"setting.account.edit" = "Chỉnh";
+"setting.account.id" = "Hyphenate ID";
+"setting.account.signout" = "Sign Out";
+"setting.account.name" = "Name";
+"setting.uploading" = "Uploading..";
+"setting.uploadSuccess" = "Upload Successfully";
+"setting.uploadFailed" = "Upload Failed";
+
+//setting.chats
+"setting.chats.acceptInvitation" = "Accept group invites automatically";
+
+//logout
+"logout.failed" = "Logout failed";
+
+//loading
+"loading.dropdown" = "Drop down loading...";
+"loading.start" = "Start loading...";
+"loading.end" = "Loading completed...";
+
+//add contact
+"contact.enterHyphenateID" = "Enter Hyphenate ID";
+"contact.sendApplySuccess" = "Requested";
+"contact.sendApplyFail" = "send application fails, please operate again";
+"contact.noinput" = "No input contact name";
+"contact.repeatContact" = "This contact has been added";
+"contact.addOwner" = "Not allowed to send their own friends to apply for";
+"contact.name" = "Name";
+"contact.hyphenateId" = "Hyphenate ID";
+"contact.apnsnickname" = "iOS APNS";
+"contact.block" = "Block Contact";
+"contact.blockFailure" = "Block failure";
+"contact.unblockFailure" = "Unblock failure";
+"contact.delete" = "Delete Contact";
+"contact.deleteFailure" = "Delete contacts failed";
+"contact.somebodyAddWithName" = "%@ add you as a friend";
+//"contact.somebodyDeleteWithName" = "%@ delete you from %@'s contacts";
+"contact.refusedFailure" = "Refused to apply for failure";
+"contact.agreeFailure" = "Failed to agree to apply";
+"contact.requests" = "Contact Requests";
+"contact.sendContactRequest" = "You request has been sent.";
+
+//group
+"group.participants" = "Thành viên";
+"group.groupSubject" = "Tên nhóm";
+"group.isPublic" = "Hiển thị trong tìm kiếm";
+"group.allowedOccupantInvite" = "Cho phép mời thêm thành viên";
+"group.openJoin" = "Gia nhập nhóm tự do";
+"group.groupType" = "Group Type";
+"group.isOpenJoin" = "need to agree to apply for owner";
+"group.pushNotification" = "Thông báo";
+"group.block" = "Chặn";
+"group.public" = "Public";
+"group.private" = "Private";
+"group.enabled" = "Enabled";
+"group.disabled" = "Disabled";
+"group.create" = "Tạo";
+"group.createFailure" = "Tạo nhóm thất bại";
+"group.destroy" = "Xóa nhóm";
+"group.leave" = "Rời nhóm";
+"group.seeAll" = "See all";
+"group.requested" = "Requested";
+"group.requestFailure" = "Failed to apply to the group";
+"group.destroyFailure" = "Destroy group failure";
+"group.leaveFailure" = "Leave group failure";
+"group.blockGroupFailure" = "Block group failure";
+"group.blockGroupSuccess" = "Block group success";
+"group.unblockGroupFailure" = "Unblock group failure";
+"group.unblockGroupSuccess" = "Unblock group success";
+"group.setFailure" = "Set failure";
+"group.setSuccess" = "Set success";
+"group.removeSuccess" = "Remove group members successfully";
+"group.removeFailure" = "Remove group members failure";
+"group.applyJoin" = "%@ apply to join groups\'%@\'";
+"group.applyJoinWithName" = "%@ apply to join groups\'%@\'：%@";
+"group.invite" = "%@ invite you to group: %@ [%@]";
+"group.inviteFailure" = "invite contacts to group failure";
+"group.beRefusedToJoin" = "be refused to join the group\'%@\'";
+"group.agreedAndJoined" = "agreed and joined the group of \'%@\'";
+"group.creategroup" = "%@ create a group[%@]";
+"group.inviteToJoin" = "%@ invite you to join the group [%@]";
+"group.notifications" = "Group Notifications";
+"group.id" = "Group ID";
+"group.joinPublicGroupMessage" = "Requesting message";
+"group.updateName" = "Please input group subject";
+"group.mute.success" = "Mute success";
+"group.admin.fetchFail" = "Fail to get admin list";
+"group.member.fetchFail" = "Fail to get member list";
+"group.mute.fetchFail" = "Fail to get mute list";
+"group.fetchInfoFail" = "Failed to get the group details, please try again later";
+"group.addingOccupant" = "Add a group member...";
+"group.removingOccupant" = "Deleting member...";
+"group.sectionHeaderOwnerAndAdmin" = " Owner and Admin List";
+"group.sectionHeaderMembers" = " Member List";
+"group.declineInvitation" = "%@ decline to join the group [%@]";
+"group.acceptInvitation" = "%@ has agreed to join the group [%@]";
+"group.memberToAdmin" = "%@ is upgraded to administrator";
+"group.AdminToMember" = "%@ is downgraded to members";
+"group.mute.added" = "Added to mute list:";
+"group.mute.removed" = "Removed from mute list:";
+"group.owner.updated" = "The group owner changed from %@ to %@";
+"group.owner.permission" = "Only owner can perform this operation";
+"group.member.joined" = "%@ has joined to the group [%@]";
+"group.member.leaved" = "%@ has leaved from the group [%@]";
+"group.changeAnnouncement" = "Change Announcement";
+"group.announcementUpdate" = "Group Announcement Update";
+"group.clearAnnouncement" = "Group:%@ Announcement is clear";
+"group.updateAnnouncement" = "Group:%@ Announcement: %@";
+
+//Group Bans
+"group.ban.removing" = "members are removing from the blacklist...";
+"group.ban.adding" = "Adding to black list...";
+"group.ban.fetching" = "getting group blacklist...";
+"group.ban.fetchFail" = "fail to get blacklist: %@";
+
+//common
+"common.delete" = "Xóa";
+"common.cancel" = "Hủy";
+"common.ok" = "OK";
+"common.groups" = "Nhóm chat";
+"common.chatrooms" = "Phòng chat";
+"common.next" = "Tiếp tục";
+"common.done" = "Xong";
+"common.cameraPhoto" = "Chụp ảnh";
+"common.localPhoto" = "Chọn ảnh";
+"common.edit" = "Chỉnh";
+"common.remove" = "Xóa";
+"common.search" = "Tìm kiếm";
+"common.open" = "Mở";
+"common.searchFailure" = "Tìm kiếm thất bại";
+
+//message
+"message.friendapply.agree" = "%@ agreed to add friends to apply";
+"message.friendapply.refuse" = "%@ refuse to add friends to apply";
+"message.inputGroupSubject" = "Please input a group theme";
+"message.receiveMessage" = "you have a new message";
+"message.clear" = "Xóa toàn bộ tin nhắn";
+
+//apns
+"apns.failToRegisterApns" = "Fail to register apns";
+"apns.failToBindDeviceToken" = "Fail to bind device token";
+"apns.content" = "Apns content";
+
+//network
+"network.disconnection" = "Mạng không khả dụng";
+
+//Chatroom detail
+"chatroom.somebodyInvite" = "%@ invite you to join chatroom \'%@\'";
+"chatroom.id" = "chatroomId";
+"chatroom.owner" = "Owner";
+"chatroom.admins" = "Admin List";
+"chatroom.onlineMembers" = "Online member List";
+"chatroom.blacklist" = "Danh sách chặn";
+"chatroom.mutes" = "Mute List";
+"chatroom.occupantCount" = "members count";
+"chatroom.subject" = "Subject";
+"chatroom.description" = "description";
+"chatroom.announcement" = "announcement";
+"chatroom.joining" = "Tham gia nhóm...";
+"chatroom.leaving" = "Rời nhóm...";
+"chatroom.fetchInfoFail" = "Failed to get the chatroom details";
+"chatroom.joinFailed" = "tham gia nhóm \'%@\' thất bại";
+"chatroom.join" = "\'%@\'tham gia nhóm\'%@\'";
+"chatroom.leave.hint" = "\'%@\'rời nhóm\'%@\'";
+"chatroom.remove" = "be removed from chatroom\'%@\'";
+"chatroom.create.inputName" = "Please input chatroom name";
+"chatroom.create.inputDescribe" = "Please input chatroom description";
+"chatroom.create.ongoing" = "create a chatroom...";
+"chatroom.create.success" = "create chatroom success";
+"chatroom.create.fail" = "Failed to create a chatroom, please operate again";
+
+"chatroom.destroy" = "Xóa phòng chat";
+"chatroom.leave" = "Rời nhóm";
+"chatroom.destroyFail" = "Destroy the chatroom failure";
+"chatroom.leaveFail" = "Leave the chatroom failure";
+
+"chatroom.changeOwner" = "Change owner";
+"chatroom.changeSubject" = "Change subject";
+"chatroom.changeDes" = "Change description";
+"chatroom.changeAnnouncement" = "Change announcement";
+
+"chatroom.notifications" = "Chatroom Notification";
+"chatroom.memberToAdmin" = "%@ is upgraded to administrator";
+"chatroom.AdminToMember" = "%@ is downgraded to members";
+"chatroom.mute.added" = "Added to mute list:";
+"chatroom.mute.removed" = "Removed from mute list:";
+"chatroom.owner.updated" = "The Chatroom owner changed from %@ to %@";
+"chatroom.announcementUpdate" = "Chatroom Announcement Update";
+"chatroom.clearAnnouncement" = "Chatroom:%@ Announcement is clear";
+"chatroom.updateAnnouncement" = "Chatroom:%@ Announcement: %@";

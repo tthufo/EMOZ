@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="E_Friend_Chat" rowHeight="66" id="tnq-Fa-fxm">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tnq-Fa-fxm" id="5vo-1d-N9o">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="65.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8O6-fv-nRD">
+                        <rect key="frame" x="0.0" y="64.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="4Kg-Ha-FlT"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsdfdsfdsfdsfsfdsfdsfdsfdsfsdfdsfdsfsdfds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wC7-A4-JB8">
+                        <rect key="frame" x="66" y="5" width="184" height="55"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" clipsSubviews="YES" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdH-Lc-aBh">
+                        <rect key="frame" x="258" y="8" width="54" height="48"/>
+                        <color key="backgroundColor" red="1" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="54" id="ajb-w4-jNR"/>
+                            <constraint firstAttribute="height" constant="48" id="vmw-kq-chX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                        <state key="normal" image="chat_w_c">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pjS-As-0Ou">
+                        <rect key="frame" x="8" y="7" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="0s1-qD-MKj"/>
+                            <constraint firstAttribute="height" constant="50" id="qk7-Q9-3MB"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                <color key="value" red="1" green="0.45882352941176469" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="MdH-Lc-aBh" secondAttribute="trailing" constant="8" id="08Y-9U-GEY"/>
+                    <constraint firstAttribute="trailing" secondItem="8O6-fv-nRD" secondAttribute="trailing" id="8cF-cY-4jD"/>
+                    <constraint firstAttribute="bottom" secondItem="8O6-fv-nRD" secondAttribute="bottom" id="DFX-ls-64r"/>
+                    <constraint firstItem="pjS-As-0Ou" firstAttribute="leading" secondItem="5vo-1d-N9o" secondAttribute="leading" constant="8" id="L30-Rg-3ij"/>
+                    <constraint firstItem="wC7-A4-JB8" firstAttribute="leading" secondItem="pjS-As-0Ou" secondAttribute="trailing" constant="8" id="Mww-4o-dtn"/>
+                    <constraint firstItem="MdH-Lc-aBh" firstAttribute="leading" secondItem="wC7-A4-JB8" secondAttribute="trailing" constant="8" id="VtH-fl-IzG"/>
+                    <constraint firstItem="8O6-fv-nRD" firstAttribute="leading" secondItem="5vo-1d-N9o" secondAttribute="leading" id="chY-KK-d6V"/>
+                    <constraint firstItem="MdH-Lc-aBh" firstAttribute="top" secondItem="5vo-1d-N9o" secondAttribute="top" constant="8" id="dzg-Kg-ZfK"/>
+                    <constraint firstItem="wC7-A4-JB8" firstAttribute="top" secondItem="5vo-1d-N9o" secondAttribute="top" constant="5" id="qec-0M-rmn"/>
+                    <constraint firstItem="8O6-fv-nRD" firstAttribute="top" secondItem="wC7-A4-JB8" secondAttribute="bottom" constant="4.5" id="xT7-x7-7U5"/>
+                    <constraint firstItem="pjS-As-0Ou" firstAttribute="top" secondItem="5vo-1d-N9o" secondAttribute="top" constant="7" id="zeS-J3-hva"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="236" y="464"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chat_w_c" width="50" height="50"/>
+    </resources>
+</document>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="E_User_Offline_Playlist_Cell" rowHeight="61" id="yuh-QN-H4a" customClass="SWTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yuh-QN-H4a" id="CgX-sM-wAn">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="21" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCK-EW-LN8">
+                        <rect key="frame" x="8" y="8" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="7aX-r1-ooI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="22" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsl-QH-Ck3">
+                        <rect key="frame" x="8" y="31" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="E26-uK-WC1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.58039215690000001" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yCK-EW-LN8" firstAttribute="leading" secondItem="CgX-sM-wAn" secondAttribute="leading" constant="8" id="DrY-qv-4J6"/>
+                    <constraint firstAttribute="trailing" secondItem="nsl-QH-Ck3" secondAttribute="trailing" constant="8" id="Ijh-nC-Eve"/>
+                    <constraint firstItem="nsl-QH-Ck3" firstAttribute="top" secondItem="yCK-EW-LN8" secondAttribute="bottom" constant="2" id="NeS-tq-7ZE"/>
+                    <constraint firstAttribute="trailing" secondItem="yCK-EW-LN8" secondAttribute="trailing" constant="8" id="XkB-wS-d1C"/>
+                    <constraint firstItem="yCK-EW-LN8" firstAttribute="top" secondItem="CgX-sM-wAn" secondAttribute="top" constant="8" id="ePZ-J1-GKT"/>
+                    <constraint firstItem="nsl-QH-Ck3" firstAttribute="leading" secondItem="CgX-sM-wAn" secondAttribute="leading" constant="8" id="fhq-Ty-0VV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="456" y="421.5"/>
+        </tableViewCell>
+    </objects>
+</document>

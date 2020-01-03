@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="E_User_Offline_ViewController">
+            <connections>
+                <outlet property="playBtn" destination="Z3L-XV-7kx" id="AbX-ib-kEz"/>
+                <outlet property="shuffleBtn" destination="WML-6h-fFX" id="qRc-y9-qhS"/>
+                <outlet property="tableView" destination="bqz-Ac-8hP" id="dUO-Xf-U6g"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bqz-Ac-8hP">
+                    <rect key="frame" x="0.0" y="51" width="320" height="429"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="IvW-14-Ns1"/>
+                        <outlet property="delegate" destination="-1" id="Mnd-a9-KGJ"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3L-XV-7kx">
+                    <rect key="frame" x="6" y="0.0" width="51" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="51" id="QvI-k3-sfs"/>
+                        <constraint firstAttribute="height" constant="51" id="hze-Qp-d1V"/>
+                    </constraints>
+                    <state key="normal" image="play_y"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WML-6h-fFX">
+                    <rect key="frame" x="66" y="0.0" width="51" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="51" id="7TZ-cd-9vi"/>
+                        <constraint firstAttribute="height" constant="51" id="nEj-ac-wpu"/>
+                    </constraints>
+                    <state key="normal" image="shuffle_o"/>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XÓA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvd-eC-cVg">
+                    <rect key="frame" x="10" y="38" width="42" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="1" green="0.50588235290000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="THÊM PLAYLIST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aen-l8-9ia">
+                    <rect key="frame" x="52" y="38" width="79" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="1" green="0.50588235290000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Z3L-XV-7kx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4wp-sP-3eB"/>
+                <constraint firstItem="bqz-Ac-8hP" firstAttribute="top" secondItem="WML-6h-fFX" secondAttribute="bottom" id="Kyr-SE-m4K"/>
+                <constraint firstItem="Z3L-XV-7kx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="6" id="adZ-BI-a3a"/>
+                <constraint firstItem="WML-6h-fFX" firstAttribute="leading" secondItem="Z3L-XV-7kx" secondAttribute="trailing" constant="9" id="aiI-q1-wm2"/>
+                <constraint firstAttribute="trailing" secondItem="bqz-Ac-8hP" secondAttribute="trailing" id="kb2-YZ-iQY"/>
+                <constraint firstItem="bqz-Ac-8hP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tSt-Hq-p7Q"/>
+                <constraint firstItem="WML-6h-fFX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="u2h-ZR-Mif"/>
+                <constraint firstAttribute="bottom" secondItem="bqz-Ac-8hP" secondAttribute="bottom" id="zEk-kz-b7t"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-84" y="218"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="play_y" width="50" height="50"/>
+        <image name="shuffle_o" width="50" height="50"/>
+    </resources>
+</document>
